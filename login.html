@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <link rel="icon" type="image" href="assets/logo/Ticket (2).png">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          
+        }
+        body {display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;}
+    .navbar .logo img{
+    width: 100px;
+    cursor: pointer;
+    
+}
+.navbar .links{
+    display: flex;
+    gap: 4rem;
+}
+        
+        .login-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 440px;height: 480px;
+            padding: 30px;
+            align-content: center;
+
+        }
+        .login-header{
+            text-align: center;
+            margin: 20px  0 40px 0;
+        }
+        .login-header header{
+            color:#f5f1f1 ;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .input-box .input-field{
+            width: 100%;
+            height: 60px;
+            font-size: 17px;
+            padding: 0 25px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.05);
+            outline: none;
+            transition: .2s;
+
+        } 
+        ::placeholder{
+            font-weight: 500;
+            color: #222;
+
+        }
+        .input-field:focus{
+            width: 105%;}
+            .forgot{  display: flex;
+           margin-bottom: 40px;
+            justify-content: space-between;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            font-size: 14px;color: #fdf9f9;
+        }
+        #check{
+            margin-right: 10px;
+            cursor: pointer;
+
+        }
+        a{
+            text-decoration:none ;
+
+        }a:hover{
+            text-decoration: underline;
+        }
+        section a{
+            color: #e7e0e0;
+
+        }
+        .input-submit{
+            position: relative;
+
+        }
+        .submit-btn{
+            width: 100%;
+            height: 60px;
+            background: rgb(255, 2, 2);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: .3s;
+
+        }
+        .input-submit label{
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            color: aliceblue;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);   
+              transform: translate(-50%, -50%);
+              cursor: pointer;
+
+        }
+        .submit-btn:hover{
+            background:rgb(4, 19, 226);
+            transform: scale(1.05,1);
+        }
+        .sign-up-link{
+            text-align: center;
+            margin-top: 40px;
+            font-size: 16px;
+        }
+        .sign-up-link a{
+            color: rgb(236, 228, 228);
+            font-weight: 600;
+        }
+
+
+          
+        
+    </style>
+      <header>
+        <div class="navbar">
+            <!-- <div class="logo">
+                <img src="assets/logo/Ticket (2).png"alt="" onclick= "window.location.href='home.html'">
+              </div> -->
+           <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#cinema">cinimas</a></li>
+                <li><a href=" mailto:vimalarahmathujan@gmail.com">contact</a></li>
+            </ul>
+            <!-- <a href="login.html" class="action_btn">Sign-in</a>
+            <div class="toggle_btn"> -->
+                <i class="fa-solid fa-bars"></i>
+             
+            </div>
+           
+        </div> <div class="dropdownmenu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#cinema">cinimas</a></li>
+                <li><a href="mailto:vimalarahmathujan@gumail.com">contact</a></li>
+                <!-- <li><a href="login.html" class="action_btn">sign in</a></li> -->
+            </div>
+    </header>
+    <div class="login-box">
+        <div class="login-header"> <header>Login</header></div>
+       
+  
+    <div class="input-box">
+        <input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
+    </div>
+    <div class="input-box">
+        <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
+    </div>  
+    <div class="forgot">
+        <section>
+        <input type="checkbox" id="check">
+        <label for="check">remeber me</label></section>
+<section>
+    <a href="#">
+        forgot password    </a>
+</section>
+
+    </div>
+    <div class="input-submit">
+        <button class="submit-btn" id="submit">
+
+        </button>
+    <label for="submit">Sign in</label></div>
+    <div class="sign-up-link">
+        <p>Don't have account <a href="+">Sign up</a></p>
+    </div></div>
+    <div class="footer">
+  
+        <div class="navbar">
+            <div class="logo">
+                <img src="assets/logo/Ticket (2).png"alt="" onclick= "window.location.href='home.html'">
+              </div>
+           <ul class="links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="policy.html">privacy policy</a></li>
+                <li><a href="tc.html">Terms and Condition</a></li>
+            </ul>
+            
+          
+        </div> 
+        <!-- <h4>contact us</h4>
+        <h5>0754918124</h5>
+        <h5>Email: .com</h5>
+        <h5>Ticketwala ,Chavachcheri,Jaffna</h5> -->
+   
+<p>
+                Copyright 2024 © Big Tree Entertainment Lanka Private Limited All Rights Reserved.
+The content and images used on this site are copyright protected and copyrights vests with the respective owners.
+ The usage of the content and images on this website is intended to promote the works and no endorsement of the artist
+  shall be implied. Unauthorized use is prohibited and punishable by law.
+            </p>
+ </div>
+  
+
+</body>
+</html>
